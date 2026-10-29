@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Vật Lý Cùng Thầy - Cấp 2 & Cấp 3</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="bg-indigo-700 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('home')">
+                    <div class="bg-white text-indigo-700 p-2 rounded-lg font-bold text-xl shadow">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-lg sm:text-xl tracking-wide">Vật Lý Phổ Thông</span>
+                        <span class="block text-xs text-indigo-200">Cấp 2 & Cấp 3 Toàn Diện</span>
+                    </div>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-1 lg:space-x-4">
+                    <button onclick="switchTab('home')" id="nav-home" class="nav-btn px-3 py-2 rounded-md text-sm font-medium bg-indigo-800 text-white transition">Trang Chủ</button>
+                    <button onclick="switchTab('curriculum')" id="nav-curriculum" class="nav-btn px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition">Chương Trình Học</button>
+                    <button onclick="switchTab('lessons')" id="nav-lessons" class="nav-btn px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition">Bài Giảng & Video</button>
+                    <button onclick="switchTab('quiz')" id="nav-quiz" class="nav-btn px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition">Luyện Tập</button>
+                    <button onclick="switchTab('apps')" id="nav-apps" class="nav-btn px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition">Ứng Dụng Thực Tế</button>
+                    <button onclick="switchTab('ai-tutor')" id="nav-ai-tutor" class="nav-btn px-3 py-2 rounded-md text-sm font-medium bg-amber-500 text-slate-900 hover:bg-amber-400 transition flex items-center space-x-1"><i class="fa-solid fa-robot"></i><span>Trợ Lý AI</span></button>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-indigo-800 px-4 pt-2 pb-4 space-y-1">
+            <button onclick="switchTab('home'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Trang Chủ</button>
+            <button onclick="switchTab('curriculum'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Chương Trình Học</button>
+            <button onclick="switchTab('lessons'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Bài Giảng & Video</button>
+            <button onclick="switchTab('quiz'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Luyện Tập</button>
+            <button onclick="switchTab('apps'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Ứng Dụng Thực Tế</button>
+            <button onclick="switchTab('ai-tutor'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium bg-amber-500 text-slate-900 font-bold">Trợ Lý AI Vật Lý</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- TAB 1: TRANG CHỦ -->
+        <section id="tab-home" class="tab-content space-y-12">
+            <!-- Hero Banner -->
+            <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-blue-800 rounded-2xl text-white p-8 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-2/3 space-y-6">
+                    <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Nền tảng học trực tuyến</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">Chinh Phục Môn Vật Lý Dễ Dàng & Trực Quan</h1>
+                    <p class="text-indigo-200 text-base sm:text-lg">Hệ thống bài giảng chi tiết, thí nghiệm mô phỏng, kho bài tập phong phú cùng trợ lý AI giải đáp thắc mắc 24/7 dành riêng cho học sinh Cấp 2 và Cấp 3.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="switchTab('lessons')" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded-xl shadow transition flex items-center space-x-2">
+                            <span>Khám Phá Bài Giảng</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button onclick="switchTab('ai-tutor')" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-6 py-3 rounded-xl transition flex items-center space-x-2">
+                            <i class="fa-solid fa-robot text-amber-400"></i>
+                            <span>Hỏi Đáp Cùng AI</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-8 md:mt-0 md:w-1/3 flex justify-center">
+                    <div class="bg-white/10 p-8 rounded-full border border-white/20 shadow-2xl animate-pulse">
+                        <i class="fa-solid fa-atom text-7xl sm:text-9xl text-amber-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats / Features Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
+                    <div class="bg-indigo-100 text-indigo-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-book-open"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">Cấp 2 & Cấp 3</h3>
+                        <p class="text-slate-500 text-sm">Chương trình chuẩn BGD</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
+                    <div class="bg-blue-100 text-blue-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-video"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">Video Trực Quan</h3>
+                        <p class="text-slate-500 text-sm">Bài giảng sinh động</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
+                    <div class="bg-emerald-100 text-emerald-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">Trắc Nghiệm AI</h3>
+                        <p class="text-slate-500 text-sm">Chấm điểm tức thì</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
+                    <div class="bg-amber-100 text-amber-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">Ứng Dụng Thực Tế</h3>
+                        <p class="text-slate-500 text-sm">Vật lý quanh ta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: CHƯƠNG TRÌNH HỌC -->
+        <section id="tab-curriculum" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Lộ Trình Chương Trình Học</h2>
+                <p class="text-slate-600">Chọn cấp học và khối lớp để bắt đầu ôn tập kiến thức trọng tâm.</p>
+            </div>
+            <!-- Level Selector Tabs -->
+            <div class="flex space-x-4">
+                <button onclick="switchLevel('high')" id="btn-high" class="px-6 py-2.5 rounded-lg font-bold text-sm bg-indigo-700 text-white shadow transition">Vật Lý Cấp 3 (THPT)</button>
+                <button onclick="switchLevel('middle')" id="btn-middle" class="px-6 py-2.5 rounded-lg font-bold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition">Vật Lý Cấp 2 (THCS)</button>
+            </div>
+            <!-- High School Curriculum Content -->
+            <div id="curriculum-high" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 10</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Động Lực Học & Năng Lượng</h3>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Mô tả chuyển động (Động học)</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ba định luật Newton</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Công, Công suất và Động năng</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Động lượng & Định luật bảo toàn</li>
+                    </ul>
+                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Vào Học Ngay</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 11</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Dao động, Sóng & Điện Trường</h3>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dao động điều hòa (Con lắc lò xo, đơn)</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Sóng cơ và giao thoa sóng</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Điện tích, Điện trường & Tụ điện</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dòng điện không đổi & Mạch điện</li>
+                    </ul>
+                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Vào Học Ngay</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 12</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Vật Lý Hạt Nhân & Điện Xoay Chiều</h3>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Vật lý nhiệt (Thang nhiệt độ, Nội năng)</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Từ trường & Cảm ứng điện từ</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dòng điện xoay chiều RLC</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Hạt nhân nguyên tử & Phản ứng hạt nhân</li>
+                    </ul>
+                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Vào Học Ngay</button>
+                </div>
+            </div>
+            <!-- Middle School Curriculum Content (Hidden by default) -->
+            <div id="curriculum-middle" class="hidden grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="
