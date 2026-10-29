@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học Vật Lý Cùng Thầy - Cấp 2 & Cấp 3</title>
+    <title>Học Vật Lý Cùng Thầy - Cấp 2 & Cấp 3 Toàn Diện</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -65,17 +65,17 @@
             <!-- Hero Banner -->
             <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-blue-800 rounded-2xl text-white p-8 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-2/3 space-y-6">
-                    <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Nền tảng học trực tuyến</span>
-                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">Chinh Phục Môn Vật Lý Dễ Dàng & Trực Quan</h1>
-                    <p class="text-indigo-200 text-base sm:text-lg">Hệ thống bài giảng chi tiết, thí nghiệm mô phỏng, kho bài tập phong phú cùng trợ lý AI giải đáp thắc mắc 24/7 dành riêng cho học sinh Cấp 2 và Cấp 3.</p>
+                    <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Cổng thông tin học tập chính thức</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">Chinh Phục Môn Vật Lý Từ Cơ Bản Đến Nâng Cao</h1>
+                    <p class="text-indigo-200 text-base sm:text-lg">Hệ thống bài giảng đầy đủ từ lớp 6 đến lớp 12, mô hình thí nghiệm trực quan, ngân hàng bài tập trắc nghiệm phong phú và trợ lý AI giải đáp thắc mắc 24/7.</p>
                     <div class="flex flex-wrap gap-4">
-                        <button onclick="switchTab('lessons')" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded-xl shadow transition flex items-center space-x-2">
-                            <span>Khám Phá Bài Giảng</span>
+                        <button onclick="switchTab('curriculum')" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded-xl shadow transition flex items-center space-x-2">
+                            <span>Xem Lộ Trình Học</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
-                        <button onclick="switchTab('ai-tutor')" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-6 py-3 rounded-xl transition flex items-center space-x-2">
-                            <i class="fa-solid fa-robot text-amber-400"></i>
-                            <span>Hỏi Đáp Cùng AI</span>
+                        <button onclick="switchTab('lessons')" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-6 py-3 rounded-xl transition flex items-center space-x-2">
+                            <i class="fa-solid fa-video text-amber-400"></i>
+                            <span>Xem Video Bài Giảng</span>
                         </button>
                     </div>
                 </div>
@@ -86,87 +86,476 @@
                 </div>
             </div>
 
-            <!-- Quick Stats / Features Grid -->
+            <!-- Features Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
-                    <div class="bg-indigo-100 text-indigo-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="bg-indigo-100 text-indigo-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div>
-                        <h3 class="font-bold text-slate-800 text-lg">Cấp 2 & Cấp 3</h3>
-                        <p class="text-slate-500 text-sm">Chương trình chuẩn BGD</p>
+                        <h3 class="font-bold text-slate-800 text-lg">Lớp 6 đến 12</h3>
+                        <p class="text-slate-500 text-sm">Chương trình đầy đủ</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
                     <div class="bg-blue-100 text-blue-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-video"></i></div>
                     <div>
-                        <h3 class="font-bold text-slate-800 text-lg">Video Trực Quan</h3>
-                        <p class="text-slate-500 text-sm">Bài giảng sinh động</p>
+                        <h3 class="font-bold text-slate-800 text-lg">Video Bài Giảng</h3>
+                        <p class="text-slate-500 text-sm">Trực quan, dễ hiểu</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
-                    <div class="bg-emerald-100 text-emerald-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-brain"></i></div>
+                    <div class="bg-emerald-100 text-emerald-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-clipboard-question"></i></div>
                     <div>
-                        <h3 class="font-bold text-slate-800 text-lg">Trắc Nghiệm AI</h3>
+                        <h3 class="font-bold text-slate-800 text-lg">Luyện Thi Trắc Nghiệm</h3>
                         <p class="text-slate-500 text-sm">Chấm điểm tức thì</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
-                    <div class="bg-amber-100 text-amber-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="bg-amber-100 text-amber-700 p-4 rounded-xl text-2xl"><i class="fa-solid fa-robot"></i></div>
                     <div>
-                        <h3 class="font-bold text-slate-800 text-lg">Ứng Dụng Thực Tế</h3>
-                        <p class="text-slate-500 text-sm">Vật lý quanh ta</p>
+                        <h3 class="font-bold text-slate-800 text-lg">Trợ Lý AI 24/7</h3>
+                        <p class="text-slate-500 text-sm">Giải đáp mọi thắc mắc</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- TAB 2: CHƯƠNG TRÌNH HỌC -->
+        <!-- TAB 2: CHƯƠNG TRÌNH HỌC (ĐẦY ĐỦ CẤP 2 & CẤP 3) -->
         <section id="tab-curriculum" class="tab-content hidden space-y-8">
             <div class="border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">Lộ Trình Chương Trình Học</h2>
-                <p class="text-slate-600">Chọn cấp học và khối lớp để bắt đầu ôn tập kiến thức trọng tâm.</p>
+                <h2 class="text-2xl font-bold text-slate-900">Lộ Trình Chương Trình Học Toàn Diện</h2>
+                <p class="text-slate-600">Chọn cấp học bên dưới để xem chi tiết kiến thức từ lớp 6 đến lớp 12.</p>
             </div>
             <!-- Level Selector Tabs -->
             <div class="flex space-x-4">
-                <button onclick="switchLevel('high')" id="btn-high" class="px-6 py-2.5 rounded-lg font-bold text-sm bg-indigo-700 text-white shadow transition">Vật Lý Cấp 3 (THPT)</button>
-                <button onclick="switchLevel('middle')" id="btn-middle" class="px-6 py-2.5 rounded-lg font-bold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition">Vật Lý Cấp 2 (THCS)</button>
+                <button onclick="switchLevel('high')" id="btn-high" class="px-6 py-2.5 rounded-lg font-bold text-sm bg-indigo-700 text-white shadow transition">Vật Lý Cấp 3 (THPT - Lớp 10, 11, 12)</button>
+                <button onclick="switchLevel('middle')" id="btn-middle" class="px-6 py-2.5 rounded-lg font-bold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition">Vật Lý Cấp 2 (THCS - Lớp 6, 7, 8, 9)</button>
             </div>
-            <!-- High School Curriculum Content -->
+
+            <!-- High School Curriculum Content (Lớp 10, 11, 12) -->
             <div id="curriculum-high" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 10</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Động Lực Học & Năng Lượng</h3>
-                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Mô tả chuyển động (Động học)</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ba định luật Newton</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Công, Công suất và Động năng</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Động lượng & Định luật bảo toàn</li>
-                    </ul>
-                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Vào Học Ngay</button>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 10</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Động Học & Động Lực Học</h3>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Mô tả chuyển động thẳng, biến đổi đều</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ba định luật Newton về chuyển động</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Công, Công suất & Động năng - Thế năng</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Động lượng và Định luật bảo toàn động lượng</li>
+                        </ul>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Xem Bài Giảng Lớp 10</button>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 11</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Dao động, Sóng & Điện Trường</h3>
-                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dao động điều hòa (Con lắc lò xo, đơn)</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Sóng cơ và giao thoa sóng</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Điện tích, Điện trường & Tụ điện</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dòng điện không đổi & Mạch điện</li>
-                    </ul>
-                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Vào Học Ngay</button>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 11</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Dao động, Sóng & Điện Trường</h3>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dao động điều hòa (Con lắc lò xo, con lắc đơn)</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Sóng cơ, sự truyền sóng và giao thoa sóng</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Điện tích, Điện trường, Tụ điện & Năng lượng điện</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dòng điện không đổi và các mạch điện cơ bản</li>
+                        </ul>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Xem Bài Giảng Lớp 11</button>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 12</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Vật Lý Hạt Nhân & Điện Xoay Chiều</h3>
-                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Vật lý nhiệt (Thang nhiệt độ, Nội năng)</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Từ trường & Cảm ứng điện từ</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dòng điện xoay chiều RLC</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Hạt nhân nguyên tử & Phản ứng hạt nhân</li>
-                    </ul>
-                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Vào Học Ngay</button>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-600 font-bold text-sm mb-1">LỚP 12</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Nhiệt, Từ & Vật Lý Hạt Nhân</h3>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Vật lý nhiệt (Thang nhiệt độ, Nội năng, Khí lý tưởng)</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Từ trường & Hiện tượng cảm ứng điện từ</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Dòng điện xoay chiều (Mạch RLC, Công suất, Máy biến áp)</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Hạt nhân nguyên tử & Phản ứng hạt nhân phóng xạ</li>
+                        </ul>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100 transition">Xem Bài Giảng Lớp 12</button>
                 </div>
             </div>
-            <!-- Middle School Curriculum Content (Hidden by default) -->
-            <div id="curriculum-middle" class="hidden grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                    <div class="
+
+            <!-- Middle School Curriculum Content (Lớp 6, 7, 8, 9) -->
+            <div id="curriculum-middle" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-600 font-bold text-sm mb-1">LỚP 6</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">Đo Lường & Lực Cơ Bản</h3>
+                        <p class="text-xs text-slate-600 mb-4">Cách đo chiều dài, thể tích, khối lượng, tìm hiểu về lực, trọng lực và lực đàn hồi.</p>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-blue-50 text-blue-700 text-sm font-semibold py-2 rounded-lg">Vào Học</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-600 font-bold text-sm mb-1">LỚP 7</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">Ánh Sáng & Âm Học</h3>
+                        <p class="text-xs text-slate-600 mb-4">Sự truyền ánh sáng, định luật phản xạ, gương phẳng, nguồn âm, độ cao và độ to của âm thanh.</p>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-blue-50 text-blue-700 text-sm font-semibold py-2 rounded-lg">Vào Học</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-600 font-bold text-sm mb-1">LỚP 8</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">Cơ Học & Nhiệt Học</h3>
+                        <p class="text-xs text-slate-600 mb-4">Chuyển động cơ học, vận tốc, áp suất chất lỏng - chất khí, lực đẩy Archimedes và nhiệt năng.</p>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-blue-50 text-blue-700 text-sm font-semibold py-2 rounded-lg">Vào Học</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-600 font-bold text-sm mb-1">LỚP 9</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">Điện Học & Điện Từ Học</h3>
+                        <p class="text-xs text-slate-600 mb-4">Định luật Ôm, đoạn mạch nối tiếp/song song, công suất điện, từ trường của ống dây và cảm ứng điện từ.</p>
+                    </div>
+                    <button onclick="switchTab('lessons')" class="w-full bg-blue-50 text-blue-700 text-sm font-semibold py-2 rounded-lg">Vào Học</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: BÀI GIẢNG & VIDEO -->
+        <section id="tab-lessons" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Thư Viện Bài Giảng & Video Trực Quan</h2>
+                <p class="text-slate-600">Xem video giải thích hiện tượng vật lý kết hợp lý thuyết cốt lõi.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Video Player Column -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="bg-black rounded-2xl overflow-hidden shadow-lg aspect-video flex items-center justify-center relative">
+                        <iframe id="main-video-frame" class="w-full h-full" src="https://www.youtube.com/embed/9514n2JuU0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-3">
+                        <span id="video-tag" class="bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">Vật Lý 11</span>
+                        <h3 id="video-title" class="text-xl font-bold text-slate-900">Bài 1: Dao Động Điều Hòa - Lý Thuyết & Phương Trình</h3>
+                        <p id="video-desc" class="text-slate-600 text-sm">Tìm hiểu các đại lượng đặc trưng của dao động điều hòa: Li độ, Biên độ, Tần số góc, Pha ban đầu và cách giải các bài toán cơ bản.</p>
+                    </div>
+                </div>
+                <!-- Playlist Column -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4 h-fit">
+                    <h3 class="font-bold text-slate-900 text-lg border-b pb-3 flex items-center space-x-2">
+                        <i class="fa-solid fa-list-ul text-indigo-600"></i>
+                        <span>Danh Sách Bài Giảng</span>
+                    </h3>
+                    <div class="space-y-3">
+                        <div onclick="selectLesson('9514n2JuU0o', 'Vật Lý 11', 'Bài 1: Dao Động Điều Hòa - Lý Thuyết & Phương Trình', 'Tìm hiểu các đại lượng đặc trưng của dao động điều hòa: Li độ, Biên độ, Tần số góc, Pha ban đầu và cách giải các bài toán cơ bản.')" class="p-3 rounded-lg bg-indigo-50 border border-indigo-200 cursor-pointer transition hover:bg-indigo-100 flex space-x-3 items-center">
+                            <div class="bg-indigo-700 text-white p-2 rounded text-xs font-bold"><i class="fa-solid fa-play"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-800">Dao Động Điều Hòa</h4>
+                                <span class="text-xs text-indigo-600">Vật Lý 11 • 15 phút</span>
+                            </div>
+                        </div>
+                        <div onclick="selectLesson('dQw4w9WgXcQ', 'Vật Lý 10', 'Bài 2: Ba Định Luật Newton Về Chuyển Động', 'Khám phá quán tính, lực tác dụng, phản lực và ứng dụng trong giải quyết các bài toán mặt phẳng nghiêng.')" class="p-3 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer transition hover:bg-slate-100 flex space-x-3 items-center">
+                            <div class="bg-slate-200 text-slate-700 p-2 rounded text-xs font-bold"><i class="fa-solid fa-play"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-800">Ba Định Luật Newton</h4>
+                                <span class="text-xs text-slate-500">Vật Lý 10 • 20 phút</span>
+                            </div>
+                        </div>
+                        <div onclick="selectLesson('L_LUpnjgPso', 'Vật Lý 12', 'Bài 3: Dòng Điện Xoay Chiều RLC Mắc Nối Tiếp', 'Phương pháp giản đồ Fresnel, cộng hưởng điện và công suất tiêu thụ trong mạch điện xoay chiều.')" class="p-3 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer transition hover:bg-slate-100 flex space-x-3 items-center">
+                            <div class="bg-slate-200 text-slate-700 p-2 rounded text-xs font-bold"><i class="fa-solid fa-play"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-800">Dòng Điện Xoay Chiều RLC</h4>
+                                <span class="text-xs text-slate-500">Vật Lý 12 • 25 phút</span>
+                            </div>
+                        </div>
+                        <div onclick="selectLesson('kJQP7kiw5Fk', 'Vật Lý 9', 'Bài 4: Định Luật Ôm & Đoạn Mạch Nối Tiếp', 'Công thức tính cường độ dòng điện, hiệu điện thế và điện trở tương đương trong mạch điện sơ cấp.')" class="p-3 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer transition hover:bg-slate-100 flex space-x-3 items-center">
+                            <div class="bg-slate-200 text-slate-700 p-2 rounded text-xs font-bold"><i class="fa-solid fa-play"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-800">Định Luật Ôm (THCS)</h4>
+                                <span class="text-xs text-slate-500">Vật Lý 9 • 12 phút</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: LUYỆN TẬP (TRẮC NGHIỆM MỞ RỘNG) -->
+        <section id="tab-quiz" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Phòng Luyện Tập Trắc Nghiệm</h2>
+                <p class="text-slate-600">Kiểm tra nhanh kiến thức Vật lý với hệ thống chấm điểm và giải thích chi tiết.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 max-w-3xl mx-auto space-y-6">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <span id="quiz-progress" class="text-sm font-bold text-indigo-600">Câu hỏi 1 / 4</span>
+                    <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Trắc nghiệm nhanh</span>
+                </div>
+                <div class="space-y-4">
+                    <h3 id="quiz-question" class="text-lg font-bold text-slate-900">1. Đơn vị của công suất trong hệ SI là gì?</h3>
+                    <div id="quiz-options" class="space-y-3">
+                        <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-200 hover:bg-indigo-50 cursor-pointer transition">
+                            <input type="radio" name="quiz" value="0" class="text-indigo-600 h-4 w-4">
+                            <span class="text-slate-700 font-medium">Joule (J)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-200 hover:bg-indigo-50 cursor-pointer transition">
+                            <input type="radio" name="quiz" value="1" class="text-indigo-600 h-4 w-4">
+                            <span class="text-slate-700 font-medium">Watt (W)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-200 hover:bg-indigo-50 cursor-pointer transition">
+                            <input type="radio" name="quiz" value="2" class="text-indigo-600 h-4 w-4">
+                            <span class="text-slate-700 font-medium">Newton (N)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-200 hover:bg-indigo-50 cursor-pointer transition">
+                            <input type="radio" name="quiz" value="3" class="text-indigo-600 h-4 w-4">
+                            <span class="text-slate-700 font-medium">Volt (V)</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div id="quiz-feedback" class="text-sm font-bold"></div>
+                    <button onclick="submitQuizAnswer()" id="quiz-btn" class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold px-6 py-2.5 rounded-xl transition">Trả Lời</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: ỨNG DỤNG CUỘC SỐNG -->
+        <section id="tab-apps" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Vật Lý Trong Cuộc Sống Quanh Ta</h2>
+                <p class="text-slate-600">Khám phá các hiện tượng tự nhiên và ứng dụng kỹ thuật giải thích dưới góc độ Vật lý.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6 flex items-center justify-between">
+                        <i class="fa-solid fa-bolt text-3xl text-amber-400"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider bg-indigo-700 px-2.5 py-1 rounded">Điện Từ</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-bold text-lg text-slate-800">Tại sao sấm sét lại đánh xuống mặt đất?</h3>
+                        <p class="text-slate-600 text-sm">Hiện tượng tích điện do ma sát giữa các đám mây giông tạo ra hiệu điện thế lên đến hàng triệu volt, dẫn đến quá trình phóng điện qua không khí xuống mặt đất.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6 flex items-center justify-between">
+                        <i class="fa-solid fa-rainbow text-3xl text-amber-400"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider bg-indigo-700 px-2.5 py-1 rounded">Quang Học</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-bold text-lg text-slate-800">Cầu vồng xuất hiện như thế nào?</h3>
+                        <p class="text-slate-600 text-sm">Do hiện tượng khúc xạ, phản xạ và tán sắc ánh sáng mặt trời khi đi qua các hạt nước nhỏ lơ lửng trong không khí sau cơn mưa.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6 flex items-center justify-between">
+                        <i class="fa-solid fa-ship text-3xl text-amber-400"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider bg-indigo-700 px-2.5 py-1 rounded">Cơ Học</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-bold text-lg text-slate-800">Vì sao tàu thép nặng hàng nghìn tấn vẫn nổi?</h3>
+                        <p class="text-slate-600 text-sm">Áp dụng lực đẩy Archimedes: trọng lượng của khối nước bị tàu chiếm chỗ lớn hơn hoặc bằng trọng lượng tổng cộng của toàn bộ con tàu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 6: TRỢ LÝ AI VẬT LÝ -->
+        <section id="tab-ai-tutor" class="tab-content hidden space-y-6">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center space-x-2">
+                    <i class="fa-solid fa-robot text-indigo-600"></i>
+                    <span>Trợ Lý Ảo AI Vật Lý</span>
+                </h2>
+                <p class="text-slate-600">Đặt câu hỏi về công thức, bài tập khó hoặc hiện tượng vật lý để được AI giải đáp ngay lập tức.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 flex flex-col h-[500px]">
+                <!-- Chat Messages Box -->
+                <div id="chat-messages" class="flex-grow p-6 overflow-y-auto space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-indigo-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">AI</div>
+                        <div class="bg-slate-100 text-slate-800 p-4 rounded-2xl rounded-tl-none max-w-xl text-sm leading-relaxed">
+                            Chào em! Thầy là Trợ lý AI Vật lý của em đây. Em đang gặp khó khăn ở phần bài tập hay định luật nào (cơ học, điện học, quang học...)? Cứ hỏi thầy nhé!
+                        </div>
+                    </div>
+                </div>
+                <!-- Chat Input Box -->
+                <div class="p-4 border-t border-slate-200 bg-slate-50 flex items-center space-x-3">
+                    <input type="text" id="chat-input" onkeypress="handleChatKeyPress(event)" placeholder="Nhập câu hỏi Vật lý của bạn (VD: Định luật Ôm là gì?)..." class="flex-grow px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 text-sm">
+                    <button onclick="sendChatMessage()" class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold px-6 py-3 rounded-xl transition flex items-center space-x-2">
+                        <span>Gửi</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+            <p class="font-bold text-lg">Website Học Tập Môn Vật Lý Trực Tuyến</p>
+            <p class="text-slate-400 text-sm">Hỗ trợ học sinh Cấp 2 & Cấp 3 nâng cao kiến thức và chinh phục các kỳ thi.</p>
+            <p class="text-slate-500 text-xs pt-4 border-t border-slate-800">© 2026 Physics Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Navigation Tab Switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            
+            document.querySelectorAll('.nav-btn').forEach(el => {
+                if(el.id !== 'nav-ai-tutor') {
+                    el.classList.remove('bg-indigo-800', 'text-white');
+                    el.classList.add('hover:bg-indigo-600');
+                }
+            });
+            const activeNav = document.getElementById('nav-' + tabId);
+            if(activeNav && activeNav.id !== 'nav-ai-tutor') {
+                activeNav.classList.add('bg-indigo-800', 'text-white');
+                activeNav.classList.remove('hover:bg-indigo-600');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Level Switching (High vs Middle School)
+        function switchLevel(level) {
+            if(level === 'high') {
+                document.getElementById('curriculum-high').classList.remove('hidden');
+                document.getElementById('curriculum-middle').classList.add('hidden');
+                document.getElementById('btn-high').className = "px-6 py-2.5 rounded-lg font-bold text-sm bg-indigo-700 text-white shadow transition";
+                document.getElementById('btn-middle').className = "px-6 py-2.5 rounded-lg font-bold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition";
+            } else {
+                document.getElementById('curriculum-high').classList.add('hidden');
+                document.getElementById('curriculum-middle').classList.remove('hidden');
+                document.getElementById('btn-middle').className = "px-6 py-2.5 rounded-lg font-bold text-sm bg-indigo-700 text-white shadow transition";
+                document.getElementById('btn-high').className = "px-6 py-2.5 rounded-lg font-bold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition";
+            }
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Select Lesson Video
+        function selectLesson(videoId, tag, title, desc) {
+            document.getElementById('main-video-frame').src = `https://www.youtube.com/embed/${videoId}`;
+            document.getElementById('video-tag').innerText = tag;
+            document.getElementById('video-title').innerText = title;
+            document.getElementById('video-desc').innerText = desc;
+        }
+
+        // Quiz Logic
+        const quizData = [
+            {
+                q: "1. Đơn vị của công suất trong hệ SI là gì?",
+                options: ["Joule (J)", "Watt (W)", "Newton (N)", "Volt (V)"],
+                correct: 1,
+                explanation: "Đơn vị của công suất là Watt (ký hiệu là W), với 1 W = 1 J/s."
+            },
+            {
+                q: "2. Lực đẩy Archimedes tác dụng lên một vật nhúng trong chất lỏng phụ thuộc vào yếu tố nào?",
+                options: ["Khối lượng riêng của vật", "Trọng lượng riêng của chất lỏng và thể tích phần chất lỏng bị vật chiếm chỗ", "Hình dạng của vật", "Tốc độ chuyển động của vật"],
+                correct: 1,
+                explanation: "Theo định luật Archimedes, độ lớn lực đẩy bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ: F = d * V."
+            },
+            {
+                q: "3. Trong dao động điều hòa, li độ và gia tốc luôn có tính chất gì?",
+                options: ["Cùng pha với nhau", "Vuông pha với nhau", "Ngược pha với nhau", "Lệch pha nhau pi/2"],
+                correct: 2,
+                explanation: "Gia tốc luôn ngược dấu với li độ (a = -omega^2 * x), do đó gia tốc và li độ ngược pha nhau."
+            },
+            {
+                q: "4. Định luật Ôm đối với đoạn mạch biểu diễn hệ thức nào sau đây?",
+                options: ["I = U * R", "I = R / U", "I = U / R", "U = I / R"],
+                correct: 2,
+                explanation: "Cường độ dòng điện tỷ lệ thuận với hiệu điện thế và tỷ lệ nghịch với điện trở: I = U / R."
+            }
+        ];
+        let currentQuiz = 0;
+
+        function submitQuizAnswer() {
+            const selected = document.querySelector('input[name="quiz"]:checked');
+            const feedback = document.getElementById('quiz-feedback');
+            if(!selected) {
+                feedback.innerText = "Vui lòng chọn một đáp án!";
+                feedback.className = "text-sm font-bold text-amber-600";
+                return;
+            }
+            const ans = parseInt(selected.value);
+            const current = quizData[currentQuiz];
+            if(ans === current.correct) {
+                feedback.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> Chính xác! ${current.explanation}`;
+                feedback.className = "text-sm font-bold text-emerald-600";
+            } else {
+                feedback.innerHTML = `<i class="fa-solid fa-circle-xmark text-rose-600 mr-1"></i> Chưa chính xác. ${current.explanation}`;
+                feedback.className = "text-sm font-bold text-rose-600";
+            }
+            currentQuiz++;
+            if(currentQuiz < quizData.length) {
+                document.getElementById('quiz-btn').innerText = "Câu Tiếp Theo";
+                document.getElementById('quiz-btn').setAttribute('onclick', 'nextQuiz()');
+            } else {
+                document.getElementById('quiz-btn').innerText = "Hoàn Thành";
+                document.getElementById('quiz-btn').removeAttribute('onclick');
+            }
+        }
+
+        function nextQuiz() {
+            const current = quizData[currentQuiz];
+            document.getElementById('quiz-progress').innerText = `Câu hỏi ${currentQuiz + 1} / ${quizData.length}`;
+            document.getElementById('quiz-question').innerText = current.q;
+            const optionsDiv = document.getElementById('quiz-options');
+            optionsDiv.innerHTML = '';
+            current.options.forEach((opt, idx) => {
+                optionsDiv.innerHTML += `
+                    <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-200 hover:bg-indigo-50 cursor-pointer transition">
+                        <input type="radio" name="quiz" value="${idx}" class="text-indigo-600 h-4 w-4">
+                        <span class="text-slate-700 font-medium">${opt}</span>
+                    </label>
+                `;
+            });
+            document.getElementById('quiz-feedback').innerText = "";
+            document.getElementById('quiz-btn').innerText = "Trả Lời";
+            document.getElementById('quiz-btn').setAttribute('onclick', 'submitQuizAnswer()');
+        }
+
+        // Chat AI Logic
+        function handleChatKeyPress(e) {
+            if(e.key === 'Enter') sendChatMessage();
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            const text = input.value.trim();
+            if(!text) return;
+
+            const chatMessages = document.getElementById('chat-messages');
+            chatMessages.innerHTML += `
+                <div class="flex items-start space-x-3 justify-end">
+                    <div class="bg-indigo-700 text-white p-4 rounded-2xl rounded-tr-none max-w-xl text-sm leading-relaxed">${text}</div>
+                    <div class="bg-slate-300 text-slate-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">Bạn</div>
+                </div>
+            `;
+            input.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            setTimeout(() => {
+                let reply = "Thầy đã ghi nhận câu hỏi của em. Để giải quyết câu hỏi này, em cần nắm vững định luật và công thức cơ bản trong chương trình Vật lý phổ thông. Em hãy xem lại phần lý thuyết trong mục Bài giảng nhé!";
+                const lower = text.toLowerCase();
+                if(lower.includes('định luật ôm') || lower.includes('ohm')) {
+                    reply = "Định luật Ôm phát biểu rằng: Cường độ dòng điện chạy qua dây dẫn tỷ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỷ lệ nghịch với điện trở của dây. Công thức: I = U / R.";
+                } else if(lower.includes('newton') || lower.includes('lực')) {
+                    reply = "Ba định luật Newton là nền tảng của cơ học cổ điển: 1) Quán tính; 2) Định luật cơ bản của động lực học (F = m * a); 3) Lực và phản lực luôn xuất hiện thành từng cặp ngược chiều.";
+                } else if(lower.includes('công suất')) {
+                    reply = "Công suất là đại lượng đo bằng công thực hiện được trong một đơn vị thời gian. Công thức tính: P = A / t = F * v.";
+                } else if(lower.includes('archimedes') || lower.includes('đẩy')) {
+                    reply = "Lực đẩy Archimedes tác dụng lên vật nhúng trong chất lỏng có độ lớn bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ: F_A = d * V.";
+                }
+
+                chatMessages.innerHTML += `
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-indigo-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">AI</div>
+                        <div class="bg-slate-100 text-slate-800 p-4 rounded-2xl rounded-tl-none max-w-xl text-sm leading-relaxed">${reply}</div>
+                    </div>
+                `;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 800);
+        }
+    </script>
+</body>
+</html>
